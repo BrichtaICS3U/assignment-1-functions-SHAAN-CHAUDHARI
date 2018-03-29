@@ -22,10 +22,12 @@ if X == 1:
         if temperature1 < -273.15:
             print('invail input')
         else:
-            print(int(round(CtoF(temperature1)))
-            elif X == 2:
+            print(round(CtoF(temperature1)))
+            
+elif X == 2:
        temperature2 = float(input('Enter your temperature in Fahrenhit: '))
-       print(round(FtoC(temperature2)))
+       if temperature2 < -459.67:
+           print('invalid input')
 else:
        print('invalid option')
 
