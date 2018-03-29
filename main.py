@@ -16,21 +16,26 @@ def FtoC(F):
     return C
 
 X = int(input())
-    
-if X == 1:
+while True:
+    if X == 1:
         temperature1 = float(input('Enter your temperature in Celsius: '))
         if temperature1 < -273.15:
-            print('invail input')
+            print('invaild input')
+            continue
         else:
             print(round(CtoF(temperature1)))
+            break
             
-elif X == 2:
+    elif X == 2:
        temperature2 = float(input('Enter your temperature in Fahrenhit: '))
        if temperature2 < -459.67:
            print('invalid input')
-else:
+        else:
+            print(round(FtoC(temperature2)))
+    else:
        print('invalid option')
-
+       
+        
 
 
 
